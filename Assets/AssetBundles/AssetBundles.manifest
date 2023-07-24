@@ -1,7 +1,0 @@
-ManifestFileVersion: 0
-CRC: 223142010
-AssetBundleManifest:
-  AssetBundleInfos:
-    Info_0:
-      Name: custom_scp_test
-      Dependencies: {}
