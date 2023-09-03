@@ -1,0 +1,19 @@
+This template uses content based on the SCP Foundation, SCP: Containment Breach and SCP Unity.
+
+SCP Writers
+SCP-035 - Possessive Mask by Kain Pathos Crow
+SCP-049 - Plague Doctor by Gabriel Jade, Djkaktus
+SCP-096 - The "Shy Guy" by Dr Dan
+SCP-106 - The Old Man by Dr Gears
+SCP-173 - The Sculpture by Moto42
+SCP-939 - With Many Voices by Unknown author
+SCP-3199 - Humans, Refuted by bittermixin
+
+SCP Models
+SCP-035 from SCP: Containment Breach
+SCP-049 by Aruspice
+SCP-096 from SCP: Containment Breach
+SCP-106 from SCP: Containment Breach
+SCP-173 by Aruspice
+SCP-939 by Apocryphos
+SCP-3199 by Aruspice
