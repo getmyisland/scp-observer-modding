@@ -6,9 +6,21 @@ This tutorial will guide you through all the steps from creating, preparing, tes
 
 ## Troubleshooting
 
+If you cannot fix your problem by using some of the steps below you can contact me at `getmyisland@gmail.com` or via Discord/Steam.
+
+### Own mod not visible in SCP: Observer
+
 If your own mod does not show up in SCP: Observer, most likely your `mod.json` is misconfigured. Use a JSON validator to see if there are any issues with the `mod.json` file.
 
-If you download a mod from Steam Workshop and SCP: Observer cannot find it, it may be because Steam is not installed in the default location. To fix this, go to `C:\Users\YOU\AppData\LocalLow\GetMyIsland\SCP_ Observer\mods` and open the `mods.json` file. Update the `SteamInstallDirectoryPath` key to point to the location where Steam is installed on your hard drive. If this still doesn't fix the issue check if the following folders inside the Steam install directory exist: `STEAM\steamapps\workshop\content\1738710` and if there are any files inside. This is the folder where Steam downloads the workshop mods. If you have downloaded some mods you should see a bunch of folders named like this `0123193213`, `303123151` or `350132133`. If this is not the case contact me at `getmyisland@gmail.com` or somewhere else.
+### Downloaded mod not visible in SCP: Observer
+
+If you download a mod from Steam Workshop and SCP: Observer cannot find it, it may be because Steam is not installed in the default location.
+
+To fix this, go to `C:\Users\YOU\AppData\LocalLow\GetMyIsland\SCP_ Observer\mods` and open the `mods.json` file. Update the `SteamInstallDirectoryPath` key so that it points to the location where Steam is installed on your hard drive.
+
+If this still does not fix the problem, check if the following folder exists inside the Steam installation directory: `STEAM\steamapps\workshop\content\1738710` and if there are any files inside it. 
+
+This is the Workshop folder where Steam downloads all the items you subscribe to. If you downloaded some mods, you should see a bunch of folders named `0123193213`, `303123151` or `350132133`. If not, please contact me.
 
 ## Custom Skins
 
