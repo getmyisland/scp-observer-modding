@@ -2,7 +2,7 @@
 
 This repository serves as both a tutorial and a template for the SCP: Observer mod creation process.
 
-This tutorial will guide you through all the steps from creating a mod, to preparing and testing it, to uploading it.
+This tutorial will guide you through all the steps from creating, preparing, testing and uploading a mod.
 
 ## Custom Skins
 
