@@ -4,6 +4,12 @@ This repository serves as both a tutorial and a template for the SCP: Observer m
 
 This tutorial will guide you through all the steps from creating, preparing, testing and uploading a mod.
 
+## Troubleshooting
+
+If your own mod does not show up in SCP: Observer, most likely your `mod.json` is misconfigured. Use a JSON validator to see if there are any issues with the `mod.json` file.
+
+If you download a mod from Steam Workshop and SCP: Observer cannot find it, it may be because Steam is not installed in the default location. To fix this, go to `C:\Users\YOU\AppData\LocalLow\GetMyIsland\SCP_ Observer\mods` and open the `mods.json` file. Update the `SteamInstallDirectoryPath` key to point to the location where Steam is installed on your hard drive. If this still doesn't fix the issue check if the following folders inside the Steam install directory exist: `STEAM\steamapps\workshop\content\1738710` and if there are any files inside. This is the folder where Steam downloads the workshop mods. If you have downloaded some mods you should see a bunch of folders named like this `0123193213`, `303123151` or `350132133`. If this is not the case contact me at `getmyisland@gmail.com` or somewhere else.
+
 ## Custom Skins
 
 You can create custom skins for the following characters
