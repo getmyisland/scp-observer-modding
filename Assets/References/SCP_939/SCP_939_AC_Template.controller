@@ -21,8 +21,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: -3439424863012145254, guid: 6522e708a25d81e41b4893c18ac6aba2,
-    type: 3}
+  m_Motion: {fileID: -3439424863012145254, guid: 6522e708a25d81e41b4893c18ac6aba2, type: 3}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -82,8 +81,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: -3660799156547482082, guid: 6522e708a25d81e41b4893c18ac6aba2,
-    type: 3}
+  m_Motion: {fileID: -3660799156547482082, guid: 6522e708a25d81e41b4893c18ac6aba2, type: 3}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -109,8 +107,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: -3951257629964278413, guid: 6522e708a25d81e41b4893c18ac6aba2,
-    type: 3}
+  m_Motion: {fileID: -3951257629964278413, guid: 6522e708a25d81e41b4893c18ac6aba2, type: 3}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -122,7 +119,7 @@ AnimatorController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: SCP_939_AC
+  m_Name: SCP_939_AC_Template
   serializedVersion: 5
   m_AnimatorParameters: []
   m_AnimatorLayers:
@@ -158,8 +155,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: -1286566613158974406, guid: 6522e708a25d81e41b4893c18ac6aba2,
-    type: 3}
+  m_Motion: {fileID: -1286566613158974406, guid: 6522e708a25d81e41b4893c18ac6aba2, type: 3}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
