@@ -68,6 +68,8 @@ Tip: Activate one of the reference SCP gameobjects, by clicking on the small arr
 
 If an SCP has animations you can see a template animation controller for them located inside the `References` folder. Copy the animation controller for your SCP into the `Skin` folder and proceed.
 
+IMPORTANT: Animations like Idle, Walk, Run need to enable loop in order to work as Unity does this not automatically. ([See the checkbox at image C](https://docs.unity3d.com/Manual/class-AnimationClip.html))
+
 ###### SCP-173
 
 You can skip this section as SCP-173 doesn't have animations in the game.
