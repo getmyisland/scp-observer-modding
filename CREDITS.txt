@@ -12,6 +12,7 @@ SCP-3199 - Humans, Refuted by bittermixin
 SCP Models
 SCP-035 from SCP: Containment Breach
 SCP-049 by Aruspice
+SCP-096 by Aruspice
 SCP-096 from SCP: Containment Breach
 SCP-106 from SCP: Containment Breach
 SCP-173 by Aruspice

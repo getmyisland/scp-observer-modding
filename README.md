@@ -2,9 +2,13 @@
 
 This repository serves as both a tutorial and a template for the SCP: Observer mod creation process.
 
+You don't have to use this template but it makes things easier by providing references to existing mods and SCPs in the game.
+
+Some example mods can be found in the `Examples` folder.
+
 ## Custom Skins
 
-You can create custom skins for the following characters
+You can create Custom Skins for the following characters
 - SCP-035
 - SCP-049
 - SCP-079
@@ -18,37 +22,37 @@ The process stays mostly the same for every character except SCP-079.
 
 ### SCP-079
 
-Creating a mod for SCP-079 doesn't involve downloading the template and using Unity.
+To create a mod for SCP-079, you don't need to download the template and use Unity.
 
-All you need is a folder with at least 1 image. The image(s) should have a resolution of `1280x720` pixel or an aspect ratio of `4:3`. Supported file types are `.png` and `.jpg`.
+1. Create a folder anywhere on your disk. It can have any name you want.
 
-The folder (mod file) can now be prepared to be used in SCP: Observer. See `%STEAM%/steamapps/common/SCP_Observer/Mods/INSTRUCTIONS.txt` for more details.
+2. Add at least 1 image to the folder.
+
+Note: Images should have a resolution of `1280x720` pixel or an aspect ratio of `4:3`. Supported file types are `.png` and `.jpg`.
+
+You can now prepare your mod to be used in SCP: Observer. See `%STEAM%/steamapps/common/SCP_Observer/Mods/INSTRUCTIONS.md` for more details.
 
 ### Other SCPs
-
-#### Using the template
 
 If you are completely new to Unity and/or SCP: Observer modding in general, I highly recommend using the template. For simplicity, these instructions assume that you have installed the template.
 
 ##### Download from GitHub
 
-To create a custom skin first download this repository. You can do so by either cloning it or downloading it as a `.zip` file. Either way you have to click on the green `<> Code` button.
+To create a Custom Skin first download this repository. You can do so by either cloning it or downloading it as a `.zip` file. Either way you have to click on the green `<> Code` button.
 
 ##### Open in Unity
 
-This template requires the Unity version `2021.3.5f1`. Other Unity versions have not been tested and may or may not work. The steps may differ depending on the version you use.
+This template requires the Unity version `2021.3.5f1`. Other Unity versions have not been tested and are not guaranteed to work. The steps may differ depending on the version you use.
 
 If you don't have Unity and Unity Hub installed you can download the required version [here](https://unity.com/releases/editor/archive).
 
-Open Unity Hub and click `Open` -> `Add project from disk`. Now select the location where you downloaded the template and open the project in Unity.
+Open Unity Hub and click `Open` -> `Add project from disk`. Now select the location where you downloaded the template and open the project in Unity. (If you downloaded the `.zip` file you have to unzip it.
 
 ![Unity Hub](https://i.imgur.com/hLnzxnM.png)
 
 #### Creating an Asset Bundle
 
 ##### Import Skin
-
-To create a custom skin, you need a 3D model in a format that Unity supports (e.g. fbx, obj, ...).
 
 Open the `SkinCreator` Scene which should be located inside the `Skin` folder.
 
@@ -100,8 +104,8 @@ If **all** the required files have the correct AssetBundle tag you can select `A
 
 ![Build Asset Bundles](https://i.imgur.com/gHprKNg.png)
 
-This should create a folder in your project called `AssetBundles` where the generated asset bundles will be stored.
+This should create a folder in your project called `AssetBundles` where the generated AssetBundles will be stored.
 
 Right click on the AssetBundles folder and select `Show in Explorer` to open it in the Windows Explorer. Copy all files with your tag that **DON'T** have a `.meta` file ending.
 
-Your asset bundle files (mod files) can now be prepared to be used in SCP: Observer. See `%STEAM%/steamapps/common/SCP_Observer/Mods/INSTRUCTIONS.txt` for more details.
+You can now prepare your mod to be used in SCP: Observer. See `%STEAM%/steamapps/common/SCP_Observer/Mods/INSTRUCTIONS.md` for more details.
