@@ -1,4 +1,4 @@
-This template uses content based on the SCP Foundation, SCP: Containment Breach and SCP Unity.
+Content based on the SCP Foundation, SCP: Containment Breach and SCP Unity.
 
 SCP Writers
 SCP-035 - Possessive Mask by Kain Pathos Crow
