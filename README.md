@@ -1,7 +1,5 @@
 # SCP: Observer Modding Guide
 
-**IMPORTANT: DUE TO SOME ISSUES WITH STEAM SCP: OBSERVER TOOLS IS NOT YET AVAILABLE**
-
 Some example mods can be found in the [Examples](/Examples) folder.
 
 Have fun modding.
@@ -14,11 +12,13 @@ A full guide can be found [here](/SKIN.md).
 
 ## SCP: Observer Tools
 
-If you have followed one of the instructions above and have completed your mod, you can now download the **SCP: Observer Tools** application to your Steam library. You may need to adjust your library settings so that Steam displays both Tools and Games.
+If you have followed one of the instructions above and have completed your mod, you can now download the **SCP: Observer Tools** application in your Steam library. You may need to adjust your library settings so that Steam displays both Tools and Games.
+
+![SCP: Observer Tools](https://i.imgur.com/6VeiE9Y.png)
 
 A troubleshooting guide can be found [here](/TROUBLESHOOT.md) if you encounter any errors.
 
-Note: `%STEAM%` points to the folder where Steam is installed on your machine.
+`%STEAM%` points to the folder where Steam is installed on your machine.
 By default this is `C:\Program Files (x86)\Steam`.
 
 ### Create Mod Folder
@@ -51,8 +51,10 @@ Tip: If you don't see your mod in the Mod Manager you can use the `Validate Mod 
 
 2. Fill out all required fields.
 
-To find the workshop item id of your existing mod. Copy the URL of your mod's page. The numbers after `?id=` are your workshop item id.
+To find the workshop item id of your existing mod, copy the URL of your mod's page. The numbers after `?id=` are your workshop item id.
 
-Icons should be in a square format and have a size of `512x512 px`. Supported formats are `PNG`, `JPG` and `GIF`.
+![Workshop Item ID](https://i.imgur.com/iRcsjQJ.png)
+
+Icons are images or gifs in a square format. Recommended size `512x512 px`. Supported formats are `PNG`, `JPG` and `GIF`. Not larger than 1mb.
 
 That's it. Please note before your mod will be visible on the Steam Workshop you have to accept the Steam Workshop Terms of Service and you have to set the item visibility to public.

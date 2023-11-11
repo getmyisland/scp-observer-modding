@@ -3,19 +3,33 @@
 If your problem isn't solved by applying some of the solutions below, you can contact me via Email, Discord or by making a new discussion on Steam. I will try my best to help you.
 
 E-Mail - `getmyisland@gmail.com`
+
 Discord - `getmyisland`
 
 ## Steam not found at path: ...
 
 This can happen if your Steam is not installed in the default location, which is: `C:\Program Files (x86)\Steam` and SCP: Observer cannot detect it automatically.
 
-If the `mods.json` file in the next step is not located in `%STEAM%/steamapps/common/SCP_Observer/Mods/` restart the game to regenerate it.
+Note: If the `mods.json` file in the next step is not located in `%STEAM%/steamapps/common/SCP_Observer/Mods/` restart the game to regenerate it.
 
 Edit the `%STEAM%/steamapps/common/SCP_Observer/Mods/mods.json` file and set the `"SteamInstallDirectoryPath"` accordingly.
 
 ## SCP: Observer Tools
 
 SCP: Observer Tools may sometimes throw an error if something is misconfigured. You should be able to fix most of these easily.
+
+### SteamAPI Error
+
+Some of the possible return values of the create/update functions include:
+
+- k_EResultOK - The operation completed successfully.
+- k_EResultFail - Generic failure.
+- k_EResultInvalidParam - Either the provided app ID is invalid or doesn't match the consumer app ID of the item or, you have not enabled ISteamUGC for the provided app ID on the Steam Workshop Configuration App Admin page. The preview file is smaller than 16 bytes.
+- k_EResultAccessDenied - The user doesn't own a license for the provided app ID.
+- k_EResultFileNotFound - Failed to get the workshop info for the item or failed to read the preview file.
+- k_EResultLockingFailed - Failed to aquire UGC Lock.
+- k_EResultFileNotFound - The provided content folder is not valid.
+- k_EResultLimitExceeded - The preview image is too large, it must be less than 1 Megabyte; or there is not enough space available on the user's Steam Cloud.
 
 ### mod.json
 
