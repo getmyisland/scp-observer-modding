@@ -1,5 +1,8 @@
 # SCP: Observer Modding Guide
 
+> [!CAUTION]
+> The modding process for SCP: Observer is currently being revised and updated for the 1-year anniversary update (25.04.2024). I strongly advise against creating a mod now and instead wait until the revision is complete.
+
 Some example mods can be found in the [Examples](/Examples) folder.
 
 Have fun modding.
