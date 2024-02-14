@@ -1,9 +1,11 @@
 # Troubleshooting
 
-If your problem isn't solved by applying some of the solutions below, you can contact me via Email, Discord or by making a new discussion on Steam. I will try my best to help you.
+If your problem is not solved by applying one of the solutions listed below, you can contact me. I will do my best to help you.
 
 E-Mail - `getmyisland@gmail.com`<br>
 Discord - `getmyisland`
+
+TODO fix this mess
 
 ## Steam not found at path: ...
 
