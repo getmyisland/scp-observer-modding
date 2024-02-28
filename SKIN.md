@@ -1,8 +1,6 @@
 # Custom Skins
 
-## Getting Started
-
-You can create Custom Skins for the following characters
+You can create Custom Skins for the following characters:
 - SCP-035
 - SCP-049
 - SCP-079
@@ -12,55 +10,75 @@ You can create Custom Skins for the following characters
 - SCP-939
 - SCP-3199
 
-1. Download [Unity](https://unity.com/de/download).
-
-2. Open Unity Hub and create a new URP project.
-
-3. Open the project and import the `SKIN.unitypackage` file by dragging it into the `Project` window. Make sure to import everything from this package.
-
 ## SCP-079
 
-1. Create a folder inside `Assets/Skin/Mod` called `SCP_079`.
-
-2. Drag and drop at least 1 image into the folder.
+Skin Scriptable Object field reference:
+(**REQUIRED**) `Title` - Title of your mod as shown in SCP: Observer and the Steam Workshop.
+(**REQUIRED**) `Character` - Character your skin replaces. `SCP_079` should be selected.
+(**REQUIRED**) `SCP_079_Images` - Textures that will replace SCP-079's face when taking over a monitor.
+(**OPTIONAL**) `Takeover Start Sounds` - Sounds SCP-079 will emit when taking over a monitor. If null or empty the default ones will be used.
+(**OPTIONAL**) `Takeover Stop Sounds` - Sounds SCP-079 will emit after the playing interacts with him and his face disappears. If null or empty the default ones will be used.
 
 > [!TIP]
-> Images should have a resolution of `1280x720` pixel or an aspect ratio of `4:3`. Supported file types are `.png` and `.jpg`.
+> Images/Textures should have a resolution of `1280x720` pixel or an aspect ratio of `4:3`. Supported file types are `.png` and `.jpg`.
 
-TODO Custom Sounds Setup
+1. Right-Click on the `Assets/Modding/Skin` folder and click `Create` -> `SCP: Observer` -> `Skin`.
 
-Proceed with `Building the AssetBundle` further down.
+2. In the newly created Skin Scriptable Object set your character to `SCP_079`.
+
+3. Drag and drop your assets (images, audio files) into the `Assets/Modding/Skin` folder.
+
+4. Drag and drop the imported assets from the `Assets/Modding/Skin` folder into their respective variables of your Skin Scriptable Object.
+
+5. In the Unity menu bar, click on SCP: Observer -> Export -> Skin.
+
+6. If your setup is correct you can now find your mod inside `Assets/Modding/Export`.
 
 ## Other SCPs
 
-> [!TIP]
-> You can find examples in `Assets/Skin/Examples`.
+Skin Scriptable Object field reference:
+(**REQUIRED**) `Title` - Title of your mod as shown in SCP: Observer and the Steam Workshop.
+(**REQUIRED**) `Character` - Character your skin replaces.
+(**REQUIRED**) `Skin Prefab` - Prefab of your Skin.
+(**OPTIONAL**) `Speed` - Maximum movement speed when following a path. If value is 0 or lower the default value will be used. Ignored by SCP-173.
+(**OPTIONAL**) `Accelerration` - The maximum acceleration of a character as it follows a path, given in units / sec^2. If value is 0 or lower the default value will be used. Ignored by SCP-173.
+(**OPTIONAL**) `Move Sound Chance` - Probability that a sound will be played when the character moves. If smaller than 1 the default chance will be used else sound will play 1 in n times.
+(**OPTIONAL**) `Move Sounds` - Sounds the character will emit when starting to move. If null or empty the default ones will be used.
+(**OPTIONAL**) `Rage Sounds` - Sounds the character will emit when starting to rage (e.g. hit by a Tesla Gate). If null or empty the default ones will be used.
+(**OPTIONAL**) `Spotted Sound Chance` - Probability that a sound will be played when the character is spotted in the cameras. If smaller than 1 the default chance will be used else sound will play 1 in n times.
+(**OPTIONAL**) `Spotted Sounds` - Sounds the character will emit when spotted in the cameras. If null or empty the default ones will be used.
+(**OPTIONAL**) `Stinger Sound` - Sound which plays whenever an SCP is seen in the Security Room (e.g. Jumpscare Sound). If no sound is given the default sound will be used.
+(**OPTIONAL**) `Security Room Chase Music` - Music which fades in when an SCP is seen in the Security Room. If no music are given the default music will be used.
+(**OPTIONAL**) `Kill Sounds` - Sounds which play after the player was killed (e.g. Neck Snap sound). If no sounds are given the default sounds will be used.
 
-1. Open the `SkinCreator` Scene which is located inside the `Assets/Skin` folder.
+1. Right-Click on the `Assets/Modding/Skin` folder and click `Create` -> `SCP: Observer` -> `Skin`.
 
-2. Drag and drop your skin model file as well as all required files (textures, etc.) into the `Assets/Skin/Mod` folder. If needed you can now configure your skin by creating materials and applying textures. [Unity Tutorial](https://docs.unity3d.com/2019.3/Documentation/Manual/Materials.html)
+2. In the newly created Skin Scriptable Object select your character.
 
-3. Right-Click in the Scene Hierarchy View and press `Create Empty`.
+3. Drag and drop your assets (model, textures, audio files) into the `Assets/Modding/Skin` folder. 
 
-4. Rename the newly created GameObject to `Skin`.
+4. If needed configure your skin by creating materials and applying textures. [Unity Tutorial](https://docs.unity3d.com/2019.3/Documentation/Manual/Materials.html)
 
-5. Drag and drop your skin from the Project View into the Scene Hierarchy View as a child of the newly created `Skin` GameObject.
+5. Open the `SkinCreator` Scene which is located inside the `Assets/Modding/Resources/Skin` folder.
+
+6. Right-Click in the Scene Hierarchy View and press `Create Empty`. Name it whatever suits you for example `Skin`.
+
+7. Drag and drop your skin from the Project View into the Scene Hierarchy View as a child of the newly created GameObject.
 
 ![Skin GameObject](https://i.imgur.com/4HnoBg0.png)
 
-6. Size your skin accordingly so it is standing on the ground and about the same size as the SCP you want to replace. 
+8. Size your skin accordingly so it is standing on the ground and about the same size as the SCP you want to replace. 
 
 > [!TIP]
 > Too see the actual size of other SCPs click on the small arrow next to the `References` GameObject and enable the GameObject of the SCP you want to replace. Now resize your model so it is roughly the same size.
 
-Create a Prefab of your `Skin` GameObject by drag and dropping it from the Scene Hierarchy View into the `Assets/Skin/Mod` folder in the Project View.
-
-> [!CAUTION]
-> The Prefab must be named `Skin`. After making any changes to the GameObject you have to also apply them to the Prefab.
+9. Create a Prefab of your GameObject by drag and dropping it from the Scene Hierarchy View into the `Assets/Modding/Skin` folder in the Project View.
 
 ### Animations
 
-If your SCP has animations you can see a template `AnimationController` for them located inside the `Assets/Skin/References` folder. Copy the `AnimationController` for your SCP into the `Assets/Skin/Mod` folder and proceed.
+If your SCP has animations you can see a template `AnimationController` for them located inside the `Assets/Modding/Resources/Skin/References` folder.
+
+1. Copy the `AnimationController` for your SCP into the `Assets/Modding/Skin` folder.
 
 > [!IMPORTANT]  
 > Animations like Idle, Walk, Run need to enable loop in order to work as Unity does this not automatically. ([See the checkbox at image C.](https://docs.unity3d.com/Manual/class-AnimationClip.html))

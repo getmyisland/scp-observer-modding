@@ -1,66 +1,64 @@
 # SCP: Observer Modding Guide
 
 > [!CAUTION]
-> I'm currently making changes to modding process for SCP: Observer and I strongly advise against creating a mod now and instead wait until the revision is complete.
+> This is an ongoing revision. I strongly advise against creating a mod now and instead wait until the revision is complete. Update 2.0 will be released on 04/25/2024.
 
-> [!TIP]
-> Some example mods can be found in the [Examples](/Examples) folder.
+This repository is intended to be a guide for the SCP: Observer modding process. Unfortunately, due to time constraints, only custom skins for modding are supported at this time.
 
 Have fun modding.
 
 ## Creating Mods
 
-Unfortunately, due to time constraints, only custom skins for modding are supported.
+### Getting Started
+
+1. Download [Unity](https://unity.com/de/download).
+
+2. Open Unity Hub and create a new URP project.
+
+3. Open the project and import the `Modding.unitypackage` file by dragging it into the `Project` window. Make sure to import everything from this package.
+
+4. Right-Click on the `Assets` folder and select `Create` -> `Folder`, name it `Plugins`.
+
+5. Drag and drop the `Modding.dll` and the `Modding.Editor.dll` file into the newly created folder.
+
+6. Go to [Facepunch.Steamworks](https://github.com/Facepunch/Facepunch.Steamworks/releases) and download the newest release as `.zip`.
+
+7. Unzip the downloaded archive and drag and the drop the contents of the `Unity` folder into your previously created `Plugins` folder.
 
 ### Custom Skins
 
 See [SKIN.md](/SKIN.md).
 
-## SCP: Observer Tools
-
-At this point, you should have a mod file ready from the previous steps.
-
-You can now download the **SCP: Observer Tools** application in your Steam library. You may need to adjust your library settings so that Steam displays both Tools and Games.
-
-![SCP: Observer Tools](https://i.imgur.com/6VeiE9Y.png)
-
-### Create Mod Folder
-
-1. In **SCP: Observer Tools** select the `Modding` tab.
-
-2. Fill out all required fields.
+## Testing Mods
 
 > [!TIP]
-> Mod is your file generated in the previous steps (e.g. `skin_mod`).
+> Exported mods (AssetBundles) are located in `Assets/Modding/Export`
 
-3. Copy the generated mod folder to `%STEAM%/steamapps/common/SCP_Observer/Mods/`.
+1. Place your mod in `%STEAM%/steamapps/common/SCP_Observer/Mods/`.
 
-### Testing Mods
+2. Start SCP: Observer and test the mod.
 
-1. Open **SCP: Observer** and activate your mod in the Skins menu.
-
-2. Test your mod in the game and adjust possible issues.
-
-> [!TIP]
-> If your mod is not shown in the Skins menu make sure it is located in the correct folder (`%STEAM%/steamapps/common/SCP_Observer/Mods/`).
-
-### Steam Workshop
+## Steam Workshop
 
 > [!IMPORTANT]  
 > Only upload mods that you are 100% sure work correctly.
 
-1. In **SCP: Observer Tools** select the `Steam Workshop` tab.
+1. In the Unity menu bar, click on `SCP: Observer` -> `Steam Workshop`.
 
-2. Fill out all required fields.
+2. A new window should now open.
 
-> [!TIP]
-> Icons are images or gifs in a square format. Recommended size `512x512 px`. Supported formats are `PNG`, `JPG` and `GIF`. Smaller than 1mb.
->
-> To find the workshop item id of your mod, copy the URL of your mod's Steam Workshop page. The numbers after `?id=` are your workshop item id.
-> 
-> ![Workshop Item ID](https://i.imgur.com/iRcsjQJ.png)
+3. Select a mode (create new mod or update existing one?).
 
-That's it :)
+4. Select your mod (AssetBundle) you created in the previous steps.
+
+5. Select an icon for your mod that will be shown in the Steam Workshop.
+    5.1. Supported image formats are `.png`, `.jpg`, `.gif`.
+	5.2. Less than 1MB file size.
+	5.3. Square format (e.g. 512x512 resolution)
+
+6. Click on `Create` or `Update` depending on what you want to do.
+
+7. Any further modifications like description, screenshots can be made on the Steam Workshop page for your mod.
 
 > [!WARNING]  
 > Before your mod will be visible on the Steam Workshop you have to accept the Steam Workshop Terms of Service and you have to set the item visibility to public.
