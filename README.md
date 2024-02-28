@@ -51,9 +51,9 @@ See [SKIN.md](/SKIN.md).
 
 4. Select your mod (AssetBundle) you created in the previous steps.
 
-5. Select an icon for your mod that will be shown in the Steam Workshop.
-    5.1. Supported image formats are `.png`, `.jpg`, `.gif`.
-	5.2. Less than 1MB file size.
+5. Select an icon for your mod that will be shown in the Steam Workshop.<br/>
+	5.1. Supported image formats are `.png`, `.jpg`, `.gif`.<br/>
+	5.2. Less than 1MB file size.<br/>
 	5.3. Square format (e.g. 512x512 resolution)
 
 6. Click on `Create` or `Update` depending on what you want to do.
