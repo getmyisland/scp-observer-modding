@@ -63,11 +63,13 @@ You can skip this section as SCP-173 doesn't have animations in the game.
 
 **Other Characters**
 
-Open the `AnimationController` you copied by double clicking it and you will see all the states. Select each state and choose a fitting motion (animation) from your model. If you need animations you can go on [Mixamo](https://www.mixamo.com/#/) and generate some.
+1. Open the `AnimationController` you copied by double clicking it and you will see all the states.
+
+2. Select each state and choose a fitting motion (animation) from your model. If you need animations you can go on [Mixamo](https://www.mixamo.com/#/) and generate some.
 
 ![Animation Controller](https://i.imgur.com/G7uo9jS.png)
 
-After everything is done make sure to attach the `Animator` component to your `Skin` GameObject and select your `AnimationController` from the `Assets/Skin/Mod` folder.
+3. Attach the `Animator` component to your **model** GameObject (not the Skin GameObject itself or animations won't work) and select your `AnimationController` from the `Assets/Modding/Skin` folder.
 
 ![Animator Component](https://i.imgur.com/zEoh42O.png)
 
