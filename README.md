@@ -1,7 +1,7 @@
 # SCP: Observer Modding Guide
 
 > [!CAUTION]
-> This is an ongoing revision. I strongly advise against creating a mod now and instead wait until the revision is complete. Update 2.0 will be released on 04/25/2024.
+> There is currently a problem with updating mods that are already in the Steam Workshop.
 
 This repository is intended to be a guide for the SCP: Observer modding process. Unfortunately, due to time constraints, only custom skins for modding are supported at this time.
 
